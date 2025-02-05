@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
 .bio-video {
-  max-width: 500px;
+  max-width: 450px; /* Reduced from 500px to 450px */
   width: 100%;
   border-radius: 10px;
 }
@@ -69,7 +69,29 @@ nav ul li a:hover {
 /* Adjustments for Desktop */
 @media screen and (min-width: 1024px) {
   .bio-video {
-    max-width: 500px;
+    max-width: 400px; /* Reduced further for desktop */
+  }
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+  .bio-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bio-text {
+    max-width: 50%;
+  }
+
+  .bio-video {
+    max-width: 45%; /* Keep it exactly the same for mobile */
+  }
+
+  .gallery-wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -96,28 +118,6 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* Mobile Adjustments */
-@media screen and (max-width: 768px) {
-  .bio-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .bio-text {
-    max-width: 50%;
-  }
-
-  .bio-video {
-    max-width: 45%;
-  }
-
-  .gallery-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 /* Social Icons */
 .social-icons {
   text-align: center;
@@ -141,8 +141,6 @@ footer {
   background: #111;
   text-align: center;
   padding: 20px;
-}
-
 }
 
 
