@@ -1,69 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kyle Ink - Tattoo Artist</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <div class="hero">
-      <div class="overlay">
-        <h1>Kyle Ink</h1>
-        <p>Professional Tattoo Artist</p>
-      </div>
-    </div>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#gallery">Portfolio</a></li>
-      <li><a href="booking.html">Book Now</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <section id="bio">
-    <div class="bio-container">
-      <div class="bio-text">
-        <h2>About Kyle</h2>
-        <p>Kyle is a professional tattoo artist specializing in black and grey realism, anime, and illustrative tattoos. With years of experience, he brings art to life with stunning detail and precision.</p>
-      </div>
-      <div class="bio-image">
-        <img src="bio-image.jpg" alt="Kyle working on a tattoo">
-      </div>
-    </div>
-  </section>
-  
-  <section id="gallery">
-    <h2>Portfolio</h2>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="tattoo1.jpg" alt="Tattoo 1">
-      </div>
-      <div class="gallery-item">
-        <img src="tattoo2.jpg" alt="Tattoo 2">
-      </div>
-      <div class="gallery-item">
-        <img src="tattoo3.jpg" alt="Tattoo 3">
-      </div>
-    </div>
-  </section>
-  
-  <section id="contact">
-    <h2>Connect on Social Media</h2>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/kyle_tattoo_" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@kyle_tattoo_" target="_blank"><i class="fab fa-tiktok"></i></a>
-    </div>
-  </section>
-  
-  <footer>
-    <p>&copy; 2025 Kyle Ink. All rights reserved.</p>
-  </footer>
-</body>
+/* Dark Tattoo Studio Aesthetic */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #f4c400;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #111;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #f4c400;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* Bio Section */
+.bio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 30px;
+}
+
+.bio-text {
+  max-width: 500px;
+}
+
+.bio-image img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Social Icons */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #f4c400;
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
 </html>
 
 
