@@ -59,21 +59,23 @@ nav ul li a:hover {
 }
 
 .bio-text {
-  width: 45%;
+  width: 40%;
 }
 
 .bio-video {
-  width: 55%;
+  width: 58%; /* Made it slightly wider */
   display: flex;
   justify-content: center;
 }
 
 .bio-video video {
   width: 100%;
-  max-width: 600px; /* Adjusted for better fit */
+  max-width: 700px; /* Increased width */
   height: auto;
+  aspect-ratio: 16/9; /* Forces a horizontal ratio */
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  object-fit: cover;
 }
 
 /* Gallery */
