@@ -63,16 +63,16 @@ nav ul li a:hover {
 }
 
 .bio-video {
-  width: 58%; /* Made it slightly wider */
+  width: 58%;
   display: flex;
   justify-content: center;
 }
 
 .bio-video video {
   width: 100%;
-  max-width: 700px; /* Increased width */
+  max-width: 900px; /* Makes it wider */
   height: auto;
-  aspect-ratio: 16/9; /* Forces a horizontal ratio */
+  aspect-ratio: 21/9; /* Even WIDER than 16/9 */
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   object-fit: cover;
@@ -130,7 +130,3 @@ footer {
   padding: 15px;
   margin-top: 50px;
 }
-
-
-
-
