@@ -47,6 +47,7 @@ nav ul li a:hover {
   gap: 30px;
 }
 
+/* Adjusted for perfect mobile & desktop scaling */
 .bio-text {
   max-width: 400px;
 }
@@ -63,10 +64,26 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* Adjustments for Desktop */
+/* Optimized Desktop View */
 @media screen and (min-width: 1024px) {
   .bio-video {
-    max-width: 500px;
+    max-width: 450px; /* Smaller desktop size */
+  }
+}
+
+/* Mobile Fix: Ensuring previous correct behavior */
+@media screen and (max-width: 768px) {
+  .bio-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-video {
+    max-width: 100%;
+  }
+
+  .bio-text {
+    max-width: 90%;
   }
 }
 
@@ -110,6 +127,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
