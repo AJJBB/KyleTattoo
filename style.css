@@ -40,54 +40,22 @@ nav ul li a:hover {
   color: #fff;
 }
 
-/* Bio Section */
-.bio-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  gap: 30px;
-}
-
-.bio-text {
-  max-width: 400px;
-}
-
-.bio-video {
-  max-width: 600px;
-  width: 100%;
-  border-radius: 10px;
-}
-
-.bio-video video {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Adjustments for Desktop */
-@media screen and (min-width: 1024px) {
-  .bio-video {
-    max-width: 500px;
-  }
-}
-
-/* Home Page Gallery (Featured Work) */
-.homepage-gallery {
+/* Featured Work Section */
+.gallery-wrapper {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.homepage-gallery img {
+.gallery-item img {
   width: 300px;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
 
-.homepage-gallery img:hover {
+.gallery-item img:hover {
   transform: scale(1.05);
 }
 
@@ -119,43 +87,10 @@ nav ul li a:hover {
     max-width: 45%;
   }
 
-  .homepage-gallery {
+  .gallery-wrapper {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* Booking */
-.booking {
-  text-align: center;
-  padding: 30px;
-}
-
-.calendly-embed {
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Contact */
-.contact {
-  text-align: center;
-  padding: 20px;
-}
-
-.contact a {
-  color: #f4c400;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  color: #fff;
-}
-
-.map {
-  margin-top: 20px;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 /* Social Icons */
@@ -182,6 +117,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
