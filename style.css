@@ -20,11 +20,14 @@ nav ul {
   text-align: center;
   padding: 10px;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
   display: inline;
-  margin: 0 20px;
+  margin: 10px 20px;
 }
 
 nav ul li a {
@@ -76,26 +79,24 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-/* Default: Desktop - Gallery is horizontal */
 .gallery-wrapper {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
-/* Mobile: Make Featured Work section vertical */
+.gallery-item img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobile Adjustments */
 @media screen and (max-width: 768px) {
   .gallery-wrapper {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* Image Settings */
-.gallery-item img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
 }
 
 /* Social Icons */
@@ -119,6 +120,8 @@ footer {
   background: #111;
   text-align: center;
   padding: 20px;
+}
+
 }
 
 
