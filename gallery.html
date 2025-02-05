@@ -25,13 +25,13 @@
 
   <section class="gallery">
     <div class="gallery-carousel">
-      <img src="gallery/tattoo 1.jpg" alt="Tattoo 1">
-      <img src="gallery/tattoo 2.jpg" alt="Tattoo 2">
-      <img src="gallery/tattoo 3.jpg" alt="Tattoo 3">
-      <img src="gallery/tattoo 4.jpg" alt="Tattoo 4">
-      <img src="gallery/tattoo 5.jpg" alt="Tattoo 5">
-      <img src="gallery/tattoo 6.jpg" alt="Tattoo 6">
-      <img src="gallery/tattoo 7.jpg" alt="Tattoo 7">
+      <img src="gallery/tattoo1.jpg" alt="Tattoo 1">
+      <img src="gallery/tattoo2.jpg" alt="Tattoo 2">
+      <img src="gallery/tattoo3.jpg" alt="Tattoo 3">
+      <img src="gallery/tattoo4.jpg" alt="Tattoo 4">
+      <img src="gallery/tattoo5.jpg" alt="Tattoo 5">
+      <img src="gallery/tattoo6.jpg" alt="Tattoo 6">
+      <img src="gallery/tattoo7.jpg" alt="Tattoo 7">
     </div>
   </section>
 
@@ -42,14 +42,16 @@
   <script>
     $(document).ready(function(){
       $('.gallery-carousel').slick({
-        infinite: true, /* Enabled infinite looping */
+        infinite: true, /* Ensures infinite looping */
         speed: 800,
         slidesToShow: 1,
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 3000, /* Slower Speed */
         arrows: false, /* No next/prev buttons */
-        dots: false /* No pagination dots */
+        dots: false, /* No pagination dots */
+        centerMode: true, /* Ensures continuous looping on all screen sizes */
+        variableWidth: true /* Maintains image size consistency */
       });
     });
   </script>
