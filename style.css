@@ -22,12 +22,12 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 nav ul li {
   display: inline;
-  margin: 10px 20px;
+  margin: 10px 15px;
 }
 
 nav ul li a {
@@ -52,7 +52,6 @@ nav ul li a:hover {
 
 .bio-text {
   max-width: 400px;
-  font-size: 1.1rem;
 }
 
 .bio-video {
@@ -67,7 +66,14 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* Featured Work */
+/* Adjustments for Desktop */
+@media screen and (min-width: 1024px) {
+  .bio-video {
+    max-width: 500px;
+  }
+}
+
+/* Gallery */
 .gallery {
   text-align: center;
   padding: 20px;
@@ -93,18 +99,17 @@ nav ul li a:hover {
 /* Mobile Adjustments */
 @media screen and (max-width: 768px) {
   .bio-container {
-    flex-direction: row;  /* Puts video & text next to each other */
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
   .bio-text {
-    max-width: 45%;
-    font-size: 0.9rem; /* Smaller font for better fit */
+    max-width: 50%;
   }
 
   .bio-video {
-    max-width: 50%;
+    max-width: 45%;
   }
 
   .gallery-wrapper {
@@ -123,10 +128,12 @@ nav ul li a:hover {
   color: #f4c400;
   font-size: 2rem;
   margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
   color: #fff;
+  transform: scale(1.1);
 }
 
 /* Footer */
