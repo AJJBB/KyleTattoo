@@ -6,8 +6,12 @@
   <title>Kyle Hildebrandt - Tattoo Artist</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
 </head>
 <body>
+
   <header>
     <h1>Kyle Hildebrandt</h1>
     <p>Professional Tattoo Artist</p>
@@ -37,19 +41,13 @@
   
   <section class="gallery">
     <h2>Featured Work</h2>
-    <div class="gallery-wrapper">
-      <div class="gallery-item">
-        <img src="homepage/tattoo 1.png" alt="Tattoo 1">
-      </div>
-      <div class="gallery-item">
-        <img src="homepage/tattoo 2.png" alt="Tattoo 2">
-      </div>
-      <div class="gallery-item">
-        <img src="homepage/tattoo 3.png" alt="Tattoo 3">
-      </div>
+    <div class="gallery-carousel">
+      <img src="homepage/tattoo 1.png" alt="Tattoo 1">
+      <img src="homepage/tattoo 2.png" alt="Tattoo 2">
+      <img src="homepage/tattoo 3.png" alt="Tattoo 3">
     </div>
   </section>
-  
+
   <section class="social-icons">
     <h2>Follow Me</h2>
     <a href="https://www.instagram.com/kyle_tattoo_/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
@@ -59,6 +57,22 @@
   <footer>
     <p>&copy; 2025 Kyle Ink. All rights reserved.</p>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $('.gallery-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 3000, /* Slower Speed */
+        arrows: true
+      });
+    });
+  </script>
+
 </body>
 </html>
 
