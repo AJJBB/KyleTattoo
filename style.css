@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
 .bio-video {
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   border-radius: 10px;
 }
@@ -66,15 +66,28 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* Gallery Carousel */
+/* Adjustments for Desktop */
+@media screen and (min-width: 1024px) {
+  .bio-video {
+    max-width: 500px;
+  }
+}
+
+/* Gallery */
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
 .gallery-carousel {
   width: 80%;
+  max-width: 600px;
   margin: auto;
 }
 
 .gallery-carousel img {
   width: 100%;
-  max-height: 500px;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -94,9 +107,39 @@ nav ul li a:hover {
     max-width: 45%;
   }
 
-  .gallery-carousel img {
-    max-height: 350px;
+  .gallery-wrapper {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .gallery-carousel {
+    width: 95%;
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #f4c400;
+  font-size: 2rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
 }
 
 
