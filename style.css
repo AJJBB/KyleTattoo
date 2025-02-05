@@ -79,16 +79,21 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-.gallery-carousel {
-  width: 80%;
-  max-width: 600px;
-  margin: auto;
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-.gallery-carousel img {
-  width: 100%;
+.gallery-item img {
+  width: 300px;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
 }
 
 /* Mobile Adjustments */
@@ -110,10 +115,6 @@ nav ul li a:hover {
   .gallery-wrapper {
     flex-direction: column;
     align-items: center;
-  }
-
-  .gallery-carousel {
-    width: 95%;
   }
 }
 
@@ -140,6 +141,8 @@ footer {
   background: #111;
   text-align: center;
   padding: 20px;
+}
+
 }
 
 
