@@ -111,6 +111,7 @@ nav ul li a:hover {
 
 .social-icons a i {
   font-size: 2rem;
+  font-family: 'Font Awesome 5 Brands';
 }
 
 .social-icons a:hover {
@@ -123,7 +124,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
-}<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+}
 
 
 
