@@ -6,9 +6,6 @@
   <title>Kyle Hildebrandt - Tattoo Artist</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 <body>
   <header>
@@ -40,10 +37,16 @@
 
   <section class="gallery">
     <h2>Featured Work</h2>
-    <div class="gallery-carousel">
-      <img src="homepage/tattoo 1.png" alt="Tattoo 1">
-      <img src="homepage/tattoo 2.png" alt="Tattoo 2">
-      <img src="homepage/tattoo 3.png" alt="Tattoo 3">
+    <div class="gallery-wrapper">
+      <div class="gallery-item">
+        <img src="homepage/tattoo 1.png" alt="Tattoo 1">
+      </div>
+      <div class="gallery-item">
+        <img src="homepage/tattoo 2.png" alt="Tattoo 2">
+      </div>
+      <div class="gallery-item">
+        <img src="homepage/tattoo 3.png" alt="Tattoo 3">
+      </div>
     </div>
   </section>
 
@@ -57,25 +60,8 @@
     <p>&copy; 2025 Kyle Ink. All rights reserved.</p>
   </footer>
 
-  <script>
-    $(document).ready(function(){
-      $('.gallery-carousel').slick({
-        infinite: true,
-        speed: 800, 
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 3500, 
-        arrows: false, 
-        dots: false, 
-        fade: true,
-        cssEase: 'linear'
-      });
-    });
-  </script>
-
 </body>
 </html>
-
 
 
 
