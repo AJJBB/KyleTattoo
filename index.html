@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kyle Ink - Tattoo Artist</title>
@@ -9,54 +9,51 @@
 </head>
 <body>
   <header>
-    <div class="hero">
-      <div class="overlay">
-        <h1>Kyle Ink</h1>
-        <p>Professional Tattoo Artist</p>
-      </div>
-    </div>
+    <h1>Kyle Ink</h1>
+    <p>Professional Tattoo Artist</p>
   </header>
   
   <nav>
     <ul>
-      <li><a href="#gallery">Portfolio</a></li>
-      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#booking">Book Now</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   
-  <section id="bio">
-    <div class="bio-container">
-      <div class="bio-text">
-        <h2>About Kyle</h2>
-        <p>Kyle is a professional tattoo artist specializing in black and grey realism, anime, and illustrative tattoos. With years of experience, he brings art to life with stunning detail and precision.</p>
-      </div>
-      <div class="bio-image">
-        <img src="bio-image.jpg" alt="Kyle working on a tattoo">
-      </div>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="tattoo1.jpg" alt="Tattoo 1">
+      <img src="tattoo2.jpg" alt="Tattoo 2">
+      <img src="tattoo3.jpg" alt="Tattoo 3">
     </div>
   </section>
   
-  <section id="gallery">
-    <h2>Portfolio</h2>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="tattoo1.jpg" alt="Tattoo 1">
-      </div>
-      <div class="gallery-item">
-        <img src="tattoo2.jpg" alt="Tattoo 2">
-      </div>
-      <div class="gallery-item">
-        <img src="tattoo3.jpg" alt="Tattoo 3">
-      </div>
-    </div>
+  <section id="booking">
+    <h2>Book an Appointment</h2>
+    <p>Contact me to schedule your appointment:</p>
+    <p>Email: <a href="mailto:contact@kyleink.com">contact@kyleink.com</a></p>
+    <form action="mailto:contact@kyleink.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
   
   <section id="contact">
     <h2>Connect on Social Media</h2>
     <div class="social-icons">
-      <a href="https://www.instagram.com/kyle_tattoo_" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@kyle_tattoo_" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/kyle_tattoos_" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@kyle_tattoo_" target="_blank">
+        <i class="fab fa-tiktok"></i>
+      </a>
     </div>
   </section>
   
@@ -66,7 +63,5 @@
 </body>
 </html>
 
-
-</html>
 
 
