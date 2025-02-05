@@ -25,13 +25,13 @@
 
   <section class="gallery">
     <div class="gallery-carousel">
-      <div><img src="gallery/tattoo1.jpg" alt="Tattoo 1"></div>
-      <div><img src="gallery/tattoo2.jpg" alt="Tattoo 2"></div>
-      <div><img src="gallery/tattoo3.jpg" alt="Tattoo 3"></div>
-      <div><img src="gallery/tattoo4.jpg" alt="Tattoo 4"></div>
-      <div><img src="gallery/tattoo5.jpg" alt="Tattoo 5"></div>
-      <div><img src="gallery/tattoo6.jpg" alt="Tattoo 6"></div>
-      <div><img src="gallery/tattoo7.jpg" alt="Tattoo 7"></div>
+      <div><img src="./gallery/tattoo1.jpg" alt="Tattoo 1"></div>
+      <div><img src="./gallery/tattoo2.jpg" alt="Tattoo 2"></div>
+      <div><img src="./gallery/tattoo3.jpg" alt="Tattoo 3"></div>
+      <div><img src="./gallery/tattoo4.jpg" alt="Tattoo 4"></div>
+      <div><img src="./gallery/tattoo5.jpg" alt="Tattoo 5"></div>
+      <div><img src="./gallery/tattoo6.jpg" alt="Tattoo 6"></div>
+      <div><img src="./gallery/tattoo7.jpg" alt="Tattoo 7"></div>
     </div>
   </section>
 
@@ -41,28 +41,21 @@
 
   <script>
     $(document).ready(function(){
-      $('.gallery-carousel').on('init', function(event, slick){
-        console.log('Gallery initialized');
-      });
-
       $('.gallery-carousel').slick({
-        infinite: true, /* Ensures infinite looping */
+        infinite: true, /* Looping fixed */
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000, /* Slower Speed */
+        autoplaySpeed: 3000, /* Slow swipe */
         arrows: false, /* No next/prev buttons */
         dots: false, /* No pagination dots */
-        centerMode: false, /* Keeps images from shifting */
-        adaptiveHeight: true, /* Adjusts to image height */
+        centerMode: false,
+        adaptiveHeight: true
       });
     });
   </script>
 
 </body>
 </html>
-
-
-
 
