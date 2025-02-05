@@ -74,17 +74,18 @@ nav ul li a:hover {
 /* Video Section */
 .bio-video {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .bio-video video {
   width: 100%;
   max-width: 900px;
   height: auto;
-  aspect-ratio: 21/9;
+  aspect-ratio: 16/9;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  object-fit: cover;
-  object-position: center top; /* Adjusted for a slightly more zoomed-out view */
+  object-fit: contain; /* This ensures the whole video is visible */
 }
 
 /* Gallery */
@@ -138,4 +139,5 @@ footer {
   background: #111;
   font-size: 0.9rem;
 }
+
 
