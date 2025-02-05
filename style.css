@@ -142,6 +142,50 @@ footer {
   text-align: center;
   padding: 20px;
 }
+/* Gallery Carousel */
+.gallery-carousel {
+  width: 80%;
+  margin: auto;
+}
+
+.gallery-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Booking */
+.booking {
+  text-align: center;
+  padding: 30px;
+}
+
+.calendly-embed {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact a {
+  color: #f4c400;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #fff;
+}
+
+.map {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
 
 
